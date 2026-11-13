@@ -1,0 +1,13 @@
+# Configurações locais do editor/agente
+.claude/
+.vscode/
+.idea/
+
+# Sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Node (caso alguém use ferramentas extras)
+node_modules/
+npm-debug.log*

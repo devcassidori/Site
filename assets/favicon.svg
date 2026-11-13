@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#00e5ff"/>
+      <stop offset=".55" stop-color="#19f5b4"/>
+      <stop offset="1" stop-color="#6ff3ff"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="1.4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <!-- placa chanfrada -->
+  <path d="M12 2H62V52L52 62H2V12Z" fill="#03070c"/>
+  <path d="M12 2H62V52L52 62H2V12Z" fill="none" stroke="url(#g)" stroke-width="3"/>
+  <!-- LC -->
+  <g filter="url(#glow)" fill="none" stroke="url(#g)" stroke-width="6" stroke-linecap="square" stroke-linejoin="miter">
+    <path d="M14 17V46H28"/>
+    <path d="M52 20H39L35 24V40L39 44H52"/>
+  </g>
+</svg>

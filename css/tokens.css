@@ -1,0 +1,87 @@
+/* ==========================================================================
+   CASSIDORI // NEON-GRID DESIGN SYSTEM — tokens
+   Derivado da arte de referência: noite azul-petróleo, ciano elétrico,
+   verde-água, texto branco "rachado" com glow.
+   ========================================================================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Chakra+Petch:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap");
+
+:root {
+  /* ---- Cor: base ---------------------------------------------------- */
+  --c-void:        #03070c;   /* fundo mais profundo */
+  --c-abyss:       #061019;   /* fundo de página */
+  --c-deep:        #0a1a26;   /* superfícies */
+  --c-panel:       #0e2433;   /* cards */
+  --c-panel-hi:    #13344a;   /* cards hover */
+  --c-line:        rgba(0, 229, 255, 0.16);
+  --c-line-strong: rgba(0, 229, 255, 0.42);
+
+  /* ---- Cor: neon ---------------------------------------------------- */
+  --c-cyan:        #00e5ff;   /* primária — holograma */
+  --c-cyan-soft:   #6ff3ff;
+  --c-aqua:        #19f5b4;   /* secundária — luzes verde-água */
+  --c-ice:         #d9fbff;   /* texto destaque */
+  --c-violet:      #7b5cff;   /* acento raro (pixels roxos) */
+  --c-warn:        #ffb347;
+
+  /* ---- Texto -------------------------------------------------------- */
+  --t-high:  #eefcff;
+  --t-mid:   #9bc3cf;
+  --t-low:   #5f8592;
+
+  /* ---- Gradientes --------------------------------------------------- */
+  --g-holo:  linear-gradient(120deg, var(--c-cyan) 0%, var(--c-aqua) 55%, var(--c-cyan-soft) 100%);
+  --g-panel: linear-gradient(160deg, rgba(19, 52, 74, 0.72), rgba(6, 16, 25, 0.88));
+  --g-fade:  linear-gradient(180deg, transparent, var(--c-abyss));
+
+  /* ---- Glow --------------------------------------------------------- */
+  --glow-sm: 0 0 8px rgba(0, 229, 255, 0.55);
+  --glow-md: 0 0 18px rgba(0, 229, 255, 0.45), 0 0 42px rgba(0, 229, 255, 0.18);
+  --glow-lg: 0 0 30px rgba(0, 229, 255, 0.55), 0 0 90px rgba(25, 245, 180, 0.22);
+  --text-glow: 0 0 6px rgba(0, 229, 255, 0.9), 0 0 22px rgba(0, 229, 255, 0.55), 0 0 60px rgba(0, 229, 255, 0.25);
+
+  /* ---- Tipografia --------------------------------------------------- */
+  --f-display: "Orbitron", "Chakra Petch", system-ui, sans-serif;  /* títulos, nome */
+  --f-ui:      "Chakra Petch", system-ui, sans-serif;               /* corpo / UI */
+  --f-mono:    "JetBrains Mono", ui-monospace, monospace;           /* código, labels */
+
+  /* Escala fluida (≈ razão 1.333) */
+  --fs-xs:   clamp(0.72rem, 0.70rem + 0.10vw, 0.78rem);
+  --fs-sm:   clamp(0.85rem, 0.82rem + 0.15vw, 0.93rem);
+  --fs-base: clamp(1rem,    0.96rem + 0.20vw, 1.1rem);
+  --fs-lg:   clamp(1.2rem,  1.10rem + 0.45vw, 1.45rem);
+  --fs-xl:   clamp(1.6rem,  1.30rem + 1.20vw, 2.4rem);
+  --fs-2xl:  clamp(2.2rem,  1.60rem + 2.60vw, 4rem);
+  --fs-hero: clamp(3rem,    1.60rem + 6.80vw, 8.5rem);
+
+  --lh-tight: 1.02;
+  --lh-snug:  1.25;
+  --lh-body:  1.65;
+  --tr-wide:  0.18em;
+  --tr-xwide: 0.32em;
+
+  /* ---- Espaço (4px base) ------------------------------------------- */
+  --s-1: 4px;  --s-2: 8px;  --s-3: 12px; --s-4: 16px; --s-5: 24px;
+  --s-6: 32px; --s-7: 48px; --s-8: 64px; --s-9: 96px; --s-10: 144px;
+
+  /* ---- Forma -------------------------------------------------------- */
+  --r-sm: 4px;
+  --r-md: 10px;
+  --r-lg: 18px;
+  --cut:  14px;  /* tamanho do chanfro "sci-fi" */
+  --clip-chamfer: polygon(var(--cut) 0, 100% 0, 100% calc(100% - var(--cut)), calc(100% - var(--cut)) 100%, 0 100%, 0 var(--cut));
+
+  /* ---- Movimento ---------------------------------------------------- */
+  --ease-out:    cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --d-fast: 160ms;
+  --d-med:  420ms;
+  --d-slow: 900ms;
+
+  --maxw: 1240px;
+  --gutter: clamp(16px, 4vw, 48px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root { --d-fast: 0ms; --d-med: 0ms; --d-slow: 0ms; }
+}
