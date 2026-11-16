@@ -24,9 +24,9 @@ window.PROFILE = {
     "Acredito que tecnologia é feita por pessoas para pessoas: comunicação e trabalho em equipe fazem parte de como eu entrego.",
   ],
   offCode: [
-    { icon: "🥋", title: "Jiu-jitsu", text: "Faixa azul pela equipe Alliance." },
-    { icon: "🎮", title: "Videogame", text: "Jogador nas horas vagas — e criador de alguns jogos web." },
-    { icon: "🃏", title: "Família", text: "Truco, uno e dominó nos fins de semana." },
+    { icon: "🥋", title: "Jiu-Jitsu", text: "Não sou faixa preta ainda, mas em breve chego lá." },
+    { icon: "🎮", title: "Geek", text: "Gosto de assistir filmes, séries e animes; jogar videogame." },
+    { icon: "🃏", title: "Família", text: "Gosto de ir à igreja; passear no shopping, ir ao cinema; jogar uno, truco, dominó..." },
   ],
   languages: [
     { name: "Português", level: "Nativo", pct: 100 },
