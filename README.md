@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/apple-touch-icon.png" width="84" alt="Logo LC" />
+<img src="assets/logo.png" width="96" alt="Logo LC" />
 
 # Lucas Cassidori — Portfólio
 
@@ -124,7 +124,8 @@ Sem build e sem `npm install`: é HTML, CSS e JavaScript puros, com as bibliotec
 │   ├── hero.webp          # ilustração da hero (632×411)
 │   ├── favicon.svg        # favicon principal
 │   ├── favicon-32.png     # favicon para navegadores sem suporte a SVG
-│   └── apple-touch-icon.png
+│   ├── apple-touch-icon.png
+│   └── logo.png           # logo usada no README
 ├── docs/screenshots/      # imagens deste README
 └── server.js              # servidor local de desenvolvimento (Node, sem dependências)
 ```
